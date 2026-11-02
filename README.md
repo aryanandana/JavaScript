@@ -24,7 +24,6 @@ The purpose of this repository is to practice JavaScript concepts and improve my
 ## 🛠️ Technologies Used
 
 - HTML
-
 - JavaScript
 
 ## 👩‍💻 Author
