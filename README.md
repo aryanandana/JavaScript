@@ -7,6 +7,9 @@ This repository contains my JavaScript learning and practice tasks.
 - JavaScript Basics
 - Variables and Data Types
 - Operators
+- Arrays
+- Script handling
+- Conditional Operations
 
 ## 📁 Repository Structure
 
@@ -14,6 +17,8 @@ This repository contains my JavaScript learning and practice tasks.
 JavaScript/
 │
 ├── Day 1/
+|__ Day 2/
+|
 └── README.md
 ```
 
