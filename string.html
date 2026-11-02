@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="Javascript is a language"
+        document.write(" <br>The string is :",str)
+        document.write("<br> the third position is:",str[2])
+        document.write(" <br>The string length is:",str.length)
+        // substring.charat,slice
+        document.write("<br> The CharAt works: ",str.charAt(5))
+        document.write("<br> The substring:",str.substring(3,14))
+
+        document.write("<br>Slice: ", str.slice(0,4) + " " + str.slice(4,10))
+
+        // string handling operations
+
+        let st = "WWW linkedIn instagram facebook"
+
+        document.write("<br>Split: ", st.split(" "))
+
+        document.write("<br>Uppercase:",st.toUpperCase())
+        document.write("<br>Lowercase:",st.toLowerCase())
+        document.write("<br>Search:",st.search(/instagram/g))
+        document.write("<br>replace:",st.replace(/WWW/g,"social media"))
+        let x="www."
+        let y="linkedin.com"
+        document.write("<br>Concate:",x.concat(y))
+        let k="this is the link "
+        document.write("<br>multiple:",x.concat(y," ",k))
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- e1=create element: document.createElement("which tag eg.h1")
+e1.textcontent="javascript"
+appendChild(el)-for append -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="temp"></div>
+    <p>Second day about the append .</p>
+    <script>
+        e1 =document.createElement("h1")
+        e1.textContent="javascript"
+        d1 =document.getElementById("temp")
+        d1.appendChild(e1)
+    </script>
+
+   
+<div id="temp2"></div>
+<script>
+    p1 = document.createElement("p")
+    p1.textContent = "JavaScript has mainly 3 datatypes."
+
+    ul1 = document.createElement("ul")
+
+    li1 = document.createElement("li")
+    li1.textContent = "Number"
+
+    li2 = document.createElement("li")
+    li2.textContent = "String"
+
+    li3 = document.createElement("li")
+    li3.textContent = "Boolean"
+
+    ul1.appendChild(li1)
+    ul1.appendChild(li2)
+    ul1.appendChild(li3)
+
+    d1 = document.getElementById("temp2")
+    d1.appendChild(p1)
+    d1.appendChild(ul1)
+</script>
+
+   </div>
+</body>
+</html>
