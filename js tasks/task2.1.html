@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day2 task</title>
+</head>
+<body>
+    <h3>Program to print a para about yourself using createElement() , textContent & append child.</h3>
+    <div id="temp"></div>
+    <p>My name is Aryanandana. I am a BCA graduate. I am interested in programming and technology.</p>
+    <script>
+        e1=document.createElement("p")
+        e1.textContent= "Aryanandana V.P"
+        d1=document.getElementById("temp")
+        d1.appendChild(e1)
+    </script>
+    <h3>Make an unordered list of cinemas on html page using javascript.</h3>
+    <div id="temp1"></div>
+    <script>
+        e2=document.createElement("p")
+        e2.textContent="List of cinemas"
+        ul=document.createElement("ul")
+        l1=document.createElement("li")
+        l1.textContent="Bethlahem Kudumba Unit"
+        l2=document.createElement("li")
+        l2.textContent="Drishyam3"
+        l3=document.createElement("li")
+        l3.textContent="Vaazha"
+        ul.appendChild(l1)
+        ul.appendChild(l2)
+        ul.appendChild(l3)
+        d2=document.getElementById("temp1")
+        d2.appendChild(e2)
+        d2.appendChild(ul)
+    </script>
+    <h3>Create a dropdown for programming language classes offered on html page using javascript</h3>
+    <div id="temp2"></div>
+
+<script>
+    e3 = document.createElement("select")
+
+    e4 = document.createElement("option")
+    e4.textContent = "Python"
+    e3.appendChild(e4)
+
+    e5 = document.createElement("option")
+    e5.textContent = "Java"
+    e3.appendChild(e5)
+
+    e6 = document.createElement("option")
+    e6.textContent = "JavaScript"
+    e3.appendChild(e6)
+    d2 = document.getElementById("temp2")
+    d2.appendChild(e3)
+</script>
+
+
+<h3> to check whether a given positive number is a multiple of 3 or 7</h3>
+<script>
+a=21
+
+if(a>0 && (a%3 == 0 || a%7 ==0))
+{
+    document.write("Multiple of 3 or 7")
+}
+else
+{
+    document.write("Not a multiple of 3 or 7")
+}
+</script>
+
+<h3>given number is zero,positive and negative</h3>
+<script>
+a= -5
+
+if(a > 0)
+{
+    document.write("Positive")
+}
+else if (a<0)
+{
+    document.write("Negative")
+}
+else
+{
+    document.write("Zero")
+}
+</script>
+
+<h3>smallest among three numbers</h3>
+<script>
+a= 10
+b= 5
+c= 15
+
+if (a<b && a<c)
+{
+    document.write("Smallest: " , a)
+}
+else if (b<c)
+{
+    document.write("Smallest: " , b)
+}
+else
+{
+    document.write("Smallest: " , c)
+}
+</script>
+
+<h3>largest among two numbers</h3>
+<script>
+a= 10
+b= 20
+
+if (a>b)
+{
+    document.write("Largest: " , a)
+}
+else
+{
+    document.write("Largest: " , b)
+}
+</script>
+<h3>perimeter of rectangle, square, circle, triangle</h3>
+<script>
+s= 5
+len= 10
+w= 5
+r= 7
+a = 5
+b = 6
+c = 7
+
+square = 4 * s
+rectangle = 2 * (len + w)
+circle = 2 * 3.14 * r
+triangle = a + b + c
+
+document.write("Perimeter of Square: " , square)
+document.write("<br>Perimeter of Rectangle: " , rectangle)
+document.write("<br>Perimeter of Circle: " , circle)
+document.write("<br>Perimeter of Triangle: " , triangle)
+</script>
+
+<h3> area of square, circle, rectangle, triangle</h3>
+<script>
+s= 5
+r= 7
+len= 10
+b= 5
+base = 8
+height = 6
+
+square = s*s
+circle = 3.14 * r* r
+rectangle = len * b
+triangle = 0.5 * base * height
+
+document.write("Area of Square: " ,square)
+document.write("<br>Area of Circle: ",circle)
+document.write("<br>Area of Rectangle: ",rectangle)
+document.write("<br>Area of Triangle: " ,triangle)
+</script>
+<h3> cube of a number</h3>
+<script>
+a= 5
+cube= a * a * a
+
+document.write("Cube: " ,cube)
+</script>
+<h3>square of a number</h3>
+<script>
+a = 5
+square= a * a
+document.write("Square: " ,square)
+</script>
+<h3>convert Celsius to fahrenheit</h3>
+<script>
+c = 30
+
+f = (c * 9/5) + 32
+
+document.write("F: " ,f)
+</script>
+<h3>swap two numbers without temporary variable</h3>
+<script>
+a = 10
+b = 20
+
+a= a + b
+b= a - b
+a= a - b
+
+document.write("A = " ,a)
+document.write("<br>B = " , b)
+</script>
+<h3>swap two numbers using a temporary variable</h3>
+<script>
+a= 10
+b= 20
+
+temp= a
+a= b
+b= temp
+
+document.write("A = " , a)
+document.write("<br>B = " ,b)
+</script>
+<h3>“I like to play video games.” “I don’t like Hide & seek”. Change 'like' to 'don't like'.</h3>
+<script>
+str1 = "I like to play video games."
+str2 = "I don't like Hide & seek"
+
+document.write(str1.replace("like", "don't like"))
+document.write("<br>")
+document.write(str2.replace("like", "don't like"))
+</script>
+
+<h3>declaring fname & lastname in uppercase</h3>
+<script>
+fname = "Aryanandana"
+lname = "V.P"
+place = "Kottayam"
+
+document.write("My name is " , fname.toUpperCase() + " " + lname.toUpperCase())
+document.write("<br>I live in: " , place.toUpperCase())
+</script>
+<h3>Print  statement “ I am ___ yrs of old and my brother is 10 yrs older to me. He is now __ years old.</h3>
+<script>
+age = 21
+brother = age+10
+
+document.write("I am " + age + " yrs old and my brother is 10 yrs older to me.")
+document.write(" He is now " + brother + " years old.")
+</script>
+<h3>“Hello World” & “hEllO World” and display the result & its type.</h3>
+<script>
+str1 = "Hello World"
+str2 = "hELLO World"
+
+result = (str1 == str2)
+
+document.write("Result: " + result)
+document.write("<br>Type: " + typeof result)
+</script>
+<h3>MongoDB is a decentralised distributed ledger” using substring</h3>
+<script>
+str = "MongoDB is a decentralised distributed ledger"
+
+document.write(str.substring(0, 48))
+
+</script>
+<h3>Replace MongoDB with Blockchain.</h3>
+<script>
+str = "MongoDB is a decentralised distributed ledger. MongoDB can eliminate centralisation."
+
+document.write(str.replace(/MongoDB/g, "Blockchain"))
+</script>
+<h3>the substrings “You can study”, “you”,”will”,”do it” and combine as a sentence</h3>
+<script>
+str = "You can study anything if you have a will to do it"
+
+a = str.substring(0, 13)
+b = str.substring(26, 30)
+c = str.substring(37, 41)
+d = str.substring(45, 50)
+
+document.write(a + " " + b + " " + c + " " + d)
+</script>
+<h3>full name storing fname & lname. Print in Uppercase.</h3>
+<script>
+fname = "Aryanandana"
+lname = "V.P"
+
+document.write(fname.toUpperCase() + " " + lname.toUpperCase())
+</script>
+<h3>temperature in centigrade and display a message</h3>
+<script>
+temp = 25
+
+if (temp < 0)
+{
+    document.write("Freezing weather")
+}
+else if (temp <= 10)
+{
+    document.write("Very Cold weather")
+}
+else if (temp <= 20)
+{
+    document.write("Cold weather")
+}
+else if (temp <= 30)
+{
+    document.write("Normal in Temp")
+}
+else if (temp < 40)
+{
+    document.write("Its Hot")
+}
+else
+{
+    document.write("Its Very Hot")
+}
+</script>
+<h3>switch case to check the CGPA on given condition</h3>
+<script>
+
+cgpa = 8
+switch(cgpa)
+{
+    case 8:
+        document.write("You got 8 CGPA")
+        break
+
+    case 10:
+        document.write("You got 10 CGPA")
+        break
+
+    case 7:
+        document.write("You got 7 CGPA")
+        break
+
+    default:
+        document.write("Invalid")
+}
+</script>
+<h3>whether the person is eligible for voting using ternary operator</h3>
+<script>
+age = 21
+age >= 18 ? document.write("Eligible for voting") : document.write("Not eligible for voting") 
+</script>
+<h3> list of cakes and print the value of second option</h3>
+<div id="temp3"></div>
+<script>
+e7 = document.createElement("select")
+
+e8 = document.createElement("option")
+e8.value = "Chocolate"
+e8.textContent = "Chocolate Cake"
+e7.appendChild(e8)
+
+e9 = document.createElement("option")
+e9.value = "Vanilla"
+e9.textContent = "Vanilla Cake"
+e7.appendChild(e9)
+
+e10 = document.createElement("option")
+e10.value = "Red Velvet"
+e10.textContent = "Red Velvet Cake"
+e7.appendChild(e10)
+
+d3 = document.getElementById("temp3")
+d3.appendChild(e7)
+document.write("The value of the second option is:"+ e7.options[1].value)
+
+</script>
+<h3>radio button showing your experience on KBA(like good, bad, average)</h3>
+<div id="temp4"></div>
+<script>
+    d4 = document.getElementById("temp4")
+
+    p1 = document.createElement("p")
+    p1.textContent = "Please share your experience on KBA:"
+    d4.appendChild(p1)
+
+    r1 = document.createElement("input")
+    r1.type = "radio"
+    r1.name = "kbaExp"       
+    r1.value = "Good"
+    
+    l1 = document.createElement("text")
+    l1.textContent = " Good"
+
+    d4.appendChild(r1)
+    d4.appendChild(l1)
+    d4.appendChild(document.createElement("br"))
+
+    r2 = document.createElement("input")
+    r2.type = "radio"
+    r2.name = "kbaExp"       
+    r2.value = "Average"
+    
+    l2 = document.createElement("text")
+    l2.textContent = " Average"
+
+    d4.appendChild(r2)
+    d4.appendChild(l2)
+    d4.appendChild(document.createElement("br"))
+
+    r3 = document.createElement("input")
+    r3.type = "radio"
+    r3.name = "kbaExp"       
+    r3.value = "Bad"
+    
+    l3 = document.createElement("text")
+    l3.textContent = " Bad"
+
+    d4.appendChild(r3)
+    d4.appendChild(l3)
+</script>
+<h3>Program to find simple interest & compound interest</h3>
+<script>
+principal = 10000
+rate = 5
+time = 2
+simpleInterest = (principal * rate * time) / 100
+document.write("Interest: ", simpleInterest)
+</script>
+<h3>sum is in the range 50..80 return 65 otherwise return 80 using ternary ooperator</h3>
+<script>
+a = 40
+b = 20
+
+sum = a + b
+result = (sum >= 50 && sum <= 80) ? 65 : 80
+
+document.write("Result: ", result)
+</script>
+<h3>Sign of the Product</h3>
+<script>
+a = 3
+b = -7
+c = 2
+
+product = a * b * c
+
+if (product > 0) {
+    sign = "+"
+} else if (product < 0) {
+    sign = "-"
+} else {
+    sign = "0"
+}
+
+document.write("Sign: ", sign)
+</script>
+<h3>the roots of a quadratic equation</h3>
+<script>
+a = 1
+b = -5
+c = 6
+
+d = (b * b) - (4 * a * c)
+
+if (d > 0)
+{
+    root1 = (-b + Math.sqrt(d)) / (2 * a)
+    root2 = (-b - Math.sqrt(d)) / (2 * a)
+
+    document.write("Root 1: " + root1)
+    document.write("<br>Root 2: " + root2)
+}
+else if (d == 0)
+{
+    root = -b / (2 * a)
+
+    document.write("Equal roots: " + root)
+}
+else
+{
+    document.write("Roots are imaginary")
+}
+</script>
+<h3>month name using month number and switch</h3>
+<script>
+month = 5
+
+switch (month)
+{
+    case 1:
+        document.write("January")
+        break
+
+    case 2:
+        document.write("February")
+        break
+
+    case 3:
+        document.write("March")
+        break
+
+    case 4:
+        document.write("April")
+        break
+
+    case 5:
+        document.write("May")
+        break
+
+    case 6:
+        document.write("June")
+        break
+
+    case 7:
+        document.write("July")
+        break
+
+    case 8:
+        document.write("August")
+        break
+
+    case 9:
+        document.write("September")
+        break
+
+    case 10:
+        document.write("October")
+        break
+
+    case 11:
+        document.write("November")
+        break
+
+    case 12:
+        document.write("December")
+        break
+
+    default:
+        document.write("Invalid month")
+}
+</script>
+
+
+</body>
+</html>

@@ -10,6 +10,8 @@ This repository contains my JavaScript learning and practice tasks.
 - Arrays
 - Script handling
 - Conditional Operations
+- switch 
+- ternary operator
 
 ## 📁 Repository Structure
 
@@ -18,6 +20,8 @@ JavaScript/
 │
 ├── Day 1/
 |__ Day 2/
+|
+|__Day3
 |
 └── README.md
 ```
