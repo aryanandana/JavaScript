@@ -12,6 +12,9 @@ This repository contains my JavaScript learning and practice tasks.
 - Conditional Operations
 - switch 
 - ternary operator
+- For loop
+- while loop
+- do while
 
 ## 📁 Repository Structure
 
@@ -20,8 +23,9 @@ JavaScript/
 │
 ├── Day 1/
 |__ Day 2/
-|
-|__Day3
+|__Day  3/
+|__Day 4/
+|__Day 5
 |
 └── README.md
 ```
