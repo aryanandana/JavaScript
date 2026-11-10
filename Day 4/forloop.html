@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>1</h4>
+    <script>
+        for(i=1;i<=10;i++){
+            document.write("Javscript<br>")
+        }
+    </script>
+    <h4>2</h4>
+    <script>
+        for(i=1;i<=10;i++){
+            document.write("<br>",i)
+        }
+    </script>
+    <h4>3</h4>
+    <script>
+        
+        for(n=2;n<=20;n+=2){
+            
+            document.write("<br>",n)
+        }
+    </script>
+    <h4>4</h4>
+    <script>
+        for(n=10;n<=60;n+=10){
+            document.write(" <br>",n)
+        }
+    </script>
+    <h4>5</h4>
+    <script>
+        for(n=2;n<=47 ; n =n*2+1){
+
+            document.write("<br>",n)
+            
+        }
+    </script>
+    <h4>6</h4>
+    <script>
+        a = 0
+        b = 1
+        let sum
+        document.write(" ",a)
+        document.write(" ",b)
+        for(i=1;i<=5;i++){
+            sum=a+b
+            document.write(" ",sum)
+            a=b
+            b=sum    
+        }   
+    </script>
+    <h4>7</h4>
+    <script>
+      a=0
+      b=1
+      sum
+      document.write(a)
+      document.write("&nbsp",b)
+      for(i=0;i<=4;i++)
+      {
+        sum=a+b
+        document.write("&nbsp",sum)
+        a=b
+        b=sum
+      }
+    </script>
+    <h4>8</h4>
+    <script>
+        let fact=1 
+        for(i=3;i>0;i--)
+    {   
+       fact=fact*i
+    }
+    document.write(fact)
+    </script>
+    <h4>pre-increment and post-increment</h4>
+    <script>
+        let k=0
+        let j=k++
+        document.write("the value after increment:",j)
+        j=++k
+        document.write("<br>the value after pre-increment",j)
+        k++
+        document.write("<br>k++:",k)
+        ++k
+        document.write("<br>++k:",k)
+    </script> 
+    <h4>reverse</h4>
+    <script>
+        n=153
+        reverse=0
+        for( ;n>0; ){   
+            r=n%10
+            reverse= (reverse*10) +r
+            n=Math.floor(n/10)
+        }
+        document.write("number is:",reverse)
+    </script>  
+    <h4></h4>
+    </script>
+<h4>palindrome</h4>
+<script>
+     n=121
+     num=n
+     reverse=0
+     for( ;n>0; ){
+        r = n % 10
+        reverse = (reverse * 10) + r
+        n = Math.floor(n / 10)
+     }
+     if(num==reverse){
+        document.write("palindrome")
+     }
+     else{
+        document.write("Not a palindrome")
+     }
+</script>
+</body>
+</html>
