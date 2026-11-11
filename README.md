@@ -15,6 +15,7 @@ This repository contains my JavaScript learning and practice tasks.
 - For loop
 - while loop
 - do while
+- Array -2D Array
 
 ## 📁 Repository Structure
 
@@ -25,7 +26,8 @@ JavaScript/
 |__ Day 2/
 |__Day  3/
 |__Day 4/
-|__Day 5
+|__Day 5/
+|__Day 6
 |
 └── README.md
 ```
