@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <h3>1</h3>
+    <button id="button" onclick="clickcount()">Click Me</button>
+    <p id="no"></p>
+    <script>
+        let count=0
+        try{
+           function clickcount()
+            {
+            count++ 
+            document.getElementById("no").innerHTML=count
+            }  
+        }
+        catch(error){
+            console.log(error)
+        }
+    </script>
+    <h3>2</h3>
+    <input type="text" placeholder="Enter weight (kg)" id="w">
+    <br><br>
+    <input type="text" placeholder="Enter height (cm)" id="h">
+    <br><br>
+    <input type="button" value="Calculate BMI" onclick="bmi()">
+<p id="result"></p>
+<script>
+    function bmi(){
+        wt = Number(document.getElementById("w").value)
+        ht = Number(document.getElementById("h").value)
+
+        ht = ht / 100
+        b = wt / (ht * ht)
+
+        if(b < 18.5){
+            category = "Underweight"
+        }
+        else if(b < 25){
+            category = "Normal"
+        }
+        else if(b < 30){
+            category = "Overweight"
+        }
+        else{
+            category = "Obese"
+        }
+
+        document.getElementById("result").innerHTML = "BMI: " +Math.floor(b) + "<br>Category: " + category
+    }
+</script>
+<h3>3</h3>
+<input type="text" id="v1" placeholder="enter a number">
+<input type="text" id="op" placeholder="enter a operator">
+<input type="text" id="v2" placeholder="enter a number">
+
+<button onclick="operation()">Result</button>
+<P id="display"></P>
+<script>
+    try{
+        function operation()
+        {
+         n1 =Number(document.getElementById("v1").value)
+         n2= Number(document.getElementById("v2").value)
+         op= document.getElementById("op").value
+        switch(op)
+        {
+            case "+":  
+                Result=n1+n2
+                break
+            case "-":
+                    Result=n1-n2
+                    break
+            case "*":
+                Result=n1*n2
+                break
+            case "/":
+                Result=n1/n2
+                break  
+            }
+        document.getElementById("display").innerHTML = Result
+        }
+        
+        
+        }
+    catch (error){
+        console.log(error)
+    }
+    
+</script>
+<h3>4</h3>
+<button id="diwali" onclick="diwali()">Happy Diwali</button>
+<img src="https://shorturl.at/t9Ybz" alt="Diwali image" style="display: none;" id="cele" width="400" height="150">
+<script>
+    try{
+        function diwali(){
+            document.getElementById("cele").style.display = "block"
+            
+        }
+
+    }
+    catch (error){
+        console.log(error)
+    }
+</script>
+<h3>5</h3>
+<button id="bg" onclick="change()">Change Background</button>
+<script>
+    try{
+        function change(){
+           document.body.style.backgroundColor="pink"
+        }
+
+    }
+    catch(error){
+        console.log(error)
+    }
+</script>
+<h3>6</h3>
+<button onclick="show()">Show Message</button>
+<p id="para"></p>
+<script>
+    try{
+       function show(){
+        p=document.getElementById("para").innerHTML="Welcome! We are glad you're here."
+        
+       }
+
+    }
+    catch(error){
+        console.log(error)
+    }
+</script>
+<h3>hide text</h3>
+<h3>8</h3>
+<p id="value">0</p>
+<button onclick="increase()">Increase</button>
+<br><br>
+<button onclick="decrease()">Decrease</button>
+<script>
+    try{
+    count = 0
+    function increase(){
+        count++
+        document.getElementById("value").innerHTML = count
+    }
+
+    function decrease(){
+        count--
+        document.getElementById("value").innerHTML = count
+    }
+    }
+    catch (error){
+        console.log(error)
+    }
+</script>
+<h3>9</h3>
+<button onclick="textchange()">Change Text</button>
+<h1 id="heading1">Welcome</h1>
+<script>
+    try{
+        function textchange(){
+              if(document.getElementById("heading1").innerHTML == "Welcome"){
+                document.getElementById("heading1").innerHTML = "JavaScript is Fun!"
+              }
+              else{
+                 document.getElementById("heading1").innerHTML = "Welcome"
+              }       
+        }
+    }
+    catch (error){
+        console(error)
+    }
+</script>
+<h3>10</h3>
+<input type="text" placeholder="Enter circle radius" id="radius">
+<button onclick="calculation()">Result</button>
+<p id="R"></p>
+<script>
+    pi = 3.14
+    try{
+    function calculation(){
+        r = Number(document.getElementById("radius").value)
+
+        area = pi * (r*r)
+
+        circumference = 2*pi*r
+
+        document.getElementById("R").innerHTML = "Area: " + area + "<br>" +"Circumference: " + circumference
+    }
+    }
+    catch(error){
+        console.log(error)
+    }
+</script>
+<h3>11</h3>
+<input type="text" id="No" placeholder="enter a number">
+<button onclick="table()">View</button>
+<p id="m"></p>
+
+<script>
+    function table(){
+        n = Number(document.getElementById("No").value)
+        result = ""
+        for(i=1;i<=10;i++){
+            result += i + " * " + n + " = " + (n*i) + "<br>"
+        }
+        document.getElementById("m").innerHTML = result
+    }
+</script>
+<h3>12</h3>
+<input type="text" id="v" placeholder="enter a number">
+<button onclick="evenodd()">check</button>
+<p id="Value"></p>
+<script>
+    try{
+        function evenodd(){
+            v=Number(document.getElementById("v").value)
+            if(v%2==0){
+                document.getElementById("Value").innerHTML="even"            }
+            else{
+                document.getElementById("Value").innerHTML="odd"
+            }
+        }
+    }
+    catch(error){
+        console.log(error)
+    }
+</script>
+<h3>13</h3>
+<input type="text" placeholder="Enter your age" id="age">
+<button  onclick="testage()">Check</button>
+<p id="test"></p>
+<script>
+    try{
+        function testage(){
+            a=Number(document.getElementById("age").value)
+            if(a>=18){
+                document.getElementById("test").innerHTML="Eligible for Vote"
+            }
+            else{
+                document.getElementById("test").innerHTML="Not Eligible"
+            }
+        }
+    }
+    catch (error){
+        console.log(error)
+    }
+</script>
+<h3>14</h3>
+<input type="text" id="f" placeholder="Enter a number">
+<input type="text"  id="s" placeholder="Enter a number">
+<input type="text" id="t" placeholder="Enter a number">
+<button  onclick="largest()">Check</button>
+<p id="lvalue"></p>
+<script>
+    try{
+        function largest(){
+            a=Number(document.getElementById("f").value)
+            b=Number(document.getElementById("s").value)
+            c=Number(document.getElementById("t").value)
+            if(a>b && a>c){
+                document.getElementById("lvalue").innerHTML="A is the largest"
+            }
+            else if(b>c && b>a){
+                document.getElementById("lvalue").innerHTML="B is the largest"
+            }
+            else{
+                document.getElementById("lvalue").innerHTML="C is the largest"
+            }
+        }
+
+    }
+    catch (error){
+        console.log(error)
+    }
+</script>
+<h3>15</h3>
+<input type="text" placeholder="Enter Year here!" id="year">
+<button onclick="leapcheck()">Check</button>
+<p id="leap"></p>
+<script>
+    try{
+        function leapcheck(){
+            year=Number(document.getElementById("year").value)
+            if(year%4==0 && year%100 !=0 || year%400==0){
+                document.getElementById("leap").innerHTML=year +" is a leap year"
+            }
+            else{
+                document.getElementById("leap").innerHTML=year +" is  not a leap year"
+            }
+        }
+
+    }
+    catch (error){
+        console.log(error)
+    }
+</script>
+<h3>16</h3>
+<input type="text" placeholder="Enter a number" id="number">
+<button onclick="primecheck()">Check Prime</button>
+<p id="prime"></p>
+<script>
+    try{
+    function primecheck(){
+    num=Number(document.getElementById("number").value)
+    count=0
+    for(i=1;i<=num;i++){
+    if(num %i ==0){
+        count++
+    }
+   }
+   if(num<2){
+            document.getElementById("prime").innerHTML = "Not a Prime Number"
+        }
+        else if(count==2){
+            document.getElementById("prime").innerHTML = "Prime Number"
+        }
+        else{
+            document.getElementById("prime").innerHTML = "Not a Prime Number"
+        }
+    }
+    }
+    catch(error){
+        console.log(error)
+    }
+</script>
+<h3>17</h3>
+
+<input type="text" placeholder="Enter product price" id="price">
+<br><br>
+<input type="text" placeholder="Enter product quantity" id="quantity">
+<button onclick="billtotal()">Bill</button>
+<p id="total"></p>
+<script>
+    Total=0
+    try{
+    function billtotal(){
+        price=Number(document.getElementById("price").value)
+        quantity=Number(document.getElementById("quantity").value)
+        Total=price * quantity
+        if(Total>5000){
+            discount=Total * (10/100)
+            finalamount=Total-discount
+            document.getElementById("total").innerHTML="Discount: " + discount + "<br>" + "Total Amount: " + finalamount
+        }
+        else{
+            document.getElementById("total").innerHTML="Total Amount: " + Total
+        }
+    }
+    }
+    catch (error){
+        console.log(error)
+    }
+</script>
+<h3>18</h3>
+<input type="text" placeholder="Type Account balance" id="balance">
+<input type="text" placeholder="Enter PIN" id="pin">
+<input type="text" placeholder="Enter withdrawal Amount" id="Wamount">
+<button onclick="atmoperation()">Process</button>
+<p id="b"></p>
+<script>
+       try{
+        Pin=56789
+           function atmoperation(){
+            balance=Number(document.getElementById("balance").value)
+            pin=Number(document.getElementById("pin").value)
+            withdrawamount=Number(document.getElementById("Wamount").value)
+            if(pin==Pin){
+                if(withdrawamount<=balance){
+                    balance=balance - withdrawamount
+                    document.getElementById("b").innerHTML="Balance:" + balance
+                }
+                else{
+                    document.getElementById("b").innerHTML="Insufficient Balance"
+                }
+            }
+            else{
+                document.getElementById("b").innerHTML="Incorrect Pin"
+            }
+           }
+       }
+       catch (error){
+        console.log(error)
+       }
+</script>
+<h3>19</h3>
+<img src="https://shorturl.at/Hk8os" alt="" id="img1" style="display: none;">
+<button onclick="animal1()">Peacock</button>
+<img src="https://shorturl.at/7cy9e" alt="" id="img2" style="display: none;">
+<button onclick="animal2()">Lion</button>
+<img src="https://shorturl.at/POCuo" alt="" id="img3" style="display: none;">
+<button onclick="animal3()">Panda</button>
+<script>
+    try{
+        function animal1(){
+        document.getElementById("img1").style.display="block"
+        }
+
+       function animal2(){
+       document.getElementById("img2").style.display="block"
+      }
+
+       function animal3(){
+       document.getElementById("img3").style.display="block"
+       }
+
+    }
+    catch(error){
+        console.log(error)
+    }
+</script>
+
+
+
+
+</body>
+</html>
