@@ -39,7 +39,7 @@
     let sum=num1+num2
     console.log("sum:",sum)
 </script>
-<h4>5</h4>
+<h4>5-console</h4>
 <script>
     let name="Aryanandana v p"
     let Age=21
@@ -154,6 +154,16 @@ document.getElementById("h3").innerHTML="Changed third heading"
     document.body.appendChild(b)
 </script>
 <h4>20</h4>
+<script>
+p = document.createElement("p")
+
+for(i=1; i<=10; i++)
+{
+    p.innerHTML += i +" *" + "7" + " = " + (7*i) + "<br>"
+}
+
+document.body.appendChild(p)
+</script>
 
 </script>
 <h4>21</h4>
@@ -378,7 +388,7 @@ else{
         document.write("No")
     }
 </script>
-<h4>40</h4>
+<h4>40-console</h4>
 <script>
  a = 10;
  b = "10";
@@ -535,7 +545,7 @@ else{
         document.write("you can't access!")
     }
 </script>
-<h4>54</h4>
+<h4>54-console</h4>
 <script>
 a = 10;
 b = 20;
@@ -547,7 +557,7 @@ console.log(!(a > b));
 console.log(a < b && b > c);
 
 </script>
-<h4>55</h4>
+<h4>55-console</h4>
 <script>
 age = 17;
 hasPermission = true;
@@ -851,6 +861,35 @@ else{
 </script>
 <h4>75</h4>
 <script>
+    m1 = 85
+    m2 = 90
+    m3 = 80
+    avg = (m1+m2+m3)/3
+    if(m1>=35 && m2>=35 && m3>=35)
+    {
+        document.write("Average: " + avg + "<br>")
+
+        if(avg>=90)
+        {
+            document.write("Distinction")
+        }
+        else if(avg>=75)
+        {
+            document.write("First Class")
+        }
+        else if(avg>=60)
+        {
+            document.write("Second Class")
+        }
+        else
+        {
+            document.write("Pass")
+        }
+    }
+    else
+    {
+        document.write("Failed")
+    }
 </script>
 <h4>76</h4>
 <script>
@@ -1102,6 +1141,34 @@ switch(day){
 </script>
 <h4>84</h4>
 <script>
+    choice = 2
+    switch(choice)
+    {
+        case 1:
+            r = 5
+            area = 3.14*r*r
+            document.write("Area of Circle = " + area)
+            break
+        case 2:
+            l = 10
+            b = 5
+            area = l*b
+            document.write("Area of Rectangle = " + area)
+            break
+        case 3:
+            s = 6
+            area = s*s
+            document.write("Area of Square = " + area)
+            break
+        case 4:
+            base = 10
+            height = 5
+            area = (base*height)/2
+            document.write("Area of Triangle = " + area)
+            break
+        default:
+            document.write("Invalid choice")
+    }
 </script>
 <h4>85</h4>
 <script>
@@ -1209,7 +1276,199 @@ document.write(pay)
 <h4>93</h4>
 <script>
     percentage=75
+    income=100000
+    disissue=false
+    if(percentage>=85 && income<300000 && disissue==false){
+        document.write("Eligible for Scholarship")
+    }
+    else{
+        document.write(" Not eligible for Scholarship")
+    }
 </script>
+<h4>94</h4>
+<script>
+    username="admin"
+    enterusername='admin'
+    password="12345"
+    enterpassword="12345"
+    if(enterusername ==username && enterpassword==password){
+        document.write("Login Successful")
+    }
+    else if(enterusername != username){
+            document.write("Invalid Username")
+        }
+        else if(enterpassword != password){
+            document.write("Invalid Password")
 
+        }
+</script>
+<h4>95</h4>
+<script>
+    teama=49
+    teamb=76
+    if(teama>teamb){
+        document.write("Team A Wins")
+    }
+    else if(teama<teamb){
+        document.write("Team B wins")
+    }
+    else{
+        document.write("Match Tied")
+    }
+    if(teama<50 || teamb<50){
+        document.write("<br>"+"Low scoring match")
+    }
+</script>
+<h4>96</h4>
+<script>
+    score=89
+    attendence=85
+    experience=6
+    if(score>=90 && attendence>=95){
+        document.write("Excellent")
+    }
+    else if(score>=75 && attendence>=85){
+         document.write("Good")
+    }
+    else if(score>=50 && attendence>=75){
+         document.write("Average")
+    }
+    else{
+        document.write("Needs Improvement")
+    }
+    if(experience>5){
+        document.write("<br>"+"Eligible for Experience Bonus ")
+    }
+</script>
+<h4>97</h4>
+<script>
+    units = 350
+    senior = true
+    bill = 0
+    if(units <= 100)
+    {
+        bill = units * 2
+    }
+    else if(units <= 200)
+    {
+        bill = 100*2 + (units-100)*3
+    }
+    else if(units <= 300)
+    {
+        bill = 100*2 + 100*3 + (units-200)*5
+    }
+    else
+    {
+        bill = 100*2 + 100*3 + 100*5 + (units-300)*7
+    }
+
+    if(bill > 2000)
+    {
+        bill = bill + bill*5/100
+    }
+
+    if(senior == true)
+    {
+        bill = bill - bill*10/100
+    }
+
+    document.write("Final Electricity Bill = Rs. " + bill)
+</script>
+<h4>98</h4>
+<script>
+    age = 20
+    test = true
+    idproof = true
+    if(age < 18)
+    {
+        document.write("Not Eligible - Underage")
+    }
+    else if(test == false)
+    {
+        document.write("Driving Test Not Cleared")
+    }
+    else if(idproof == false)
+    {
+        document.write("Identity Proof Required")
+    }
+    else
+    {
+        document.write("Eligible for Licence")
+    }
+</script>
+<h4>99</h4>
+<script>
+    age = 65
+    tickets = 5
+    showtime = "6 PM"
+    price = 200
+    total = tickets * price
+    if(age < 12)
+    {
+        total = total - total*50/100
+    }
+    else if(age >= 60)
+    {
+        total = total - total*30/100
+    }
+
+    if(tickets >= 5)
+    {
+        total = total - total*10/100
+    }
+    document.write("Show Time: " + showtime + "<br>")
+    document.write("Total Ticket Amount = Rs. " + total)
+</script>
+<h4>100</h4>
+<script>
+    name = "Arya"
+    m1 = 90
+    m2 = 95
+    m3 = 90
+    attendance = 90
+    total = m1 + m2 + m3
+    avg = total/3
+
+    if(m1 < 35 || m2 < 35 || m3 < 35)
+    {
+        result = "Failed"
+        grade = " "
+    }
+    else if(attendance < 75)
+    {
+        result = "Not Eligible for Examination"
+        grade = " "
+    }
+    else
+    {
+        result = "Passed"
+
+        if(avg >= 90)
+        {
+            grade = "A+"
+        }
+        else if(avg >= 80)
+        {
+            grade = "A"
+        }
+        else if(avg >= 70)
+        {
+            grade = "B"
+        }
+        else if(avg >= 60)
+        {
+            grade = "C"
+        }
+        else
+        {
+            grade = "D"
+        }
+    }
+    document.write("Student Name: " + name + "<br>")
+    document.write("Total Marks: " + total + "<br>")
+    document.write("Average: " + avg + "<br>")
+    document.write("Grade: " + grade + "<br>")
+    document.write("Result: " + result)
+</script>
 </body>
 </html>
