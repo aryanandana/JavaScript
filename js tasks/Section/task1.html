@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>1.Student Details</h2>
+    <script>
+        let student={
+            name:"Arya",
+            rollno:30,
+            class:"PG Diploma",
+            college:"Digital university"
+        }
+        console.log("Student Details")
+        console.log("Student Name:",student.name)
+        console.log("Student Roll NO:",student.rollno)
+        console.log("Student Class:",student.class)
+        console.log("College Name:",student.college)   
+        console.log("********************")
+    </script>
+    <h2>2.Employee status</h2>
+    
+    <script>
+       let employee={
+        ename:"Arya",
+        eID:23456,
+        salary:4000,
+        designation:"engineer",
+        city:"Kottayam" ,
+        totalsalary:function(){
+            console.log("Current Monthly Salary is:" +" "+this.salary)
+            this.salary=4000*12
+            console.log("Total salary is:"+this.salary)
+        }  
+       }
+       console.log("Employee Details")
+       console.log("Employee Name:"+employee.ename)
+       console.log("Employee ID:"+employee.eID)
+       console.log("Employee Salary:"+employee.salary)
+       console.log("Employee Designation:"+employee.designation)
+       console.log("Employee City:"+employee.city)
+       employee.totalsalary()
+       console.log("*****************")
+    </script>
+     <h2>3.Map function</h2>
+    <button onclick="show()">Display</button>
+    <p id="getname"></p>
+    <p id="getage"></p>
+    <p id="getnumber"></p>
+    <p id="getwork"></p>
+    <p id="haskey"></p>
+    <P id="afterdlt"></P>
+    <p id="afterclear"></p>
+    <p id="beforeclear"></p>
+    <script>
+        function  show(){
+        let mymap=new Map()
+        mymap.set("name","Arya")
+        mymap.set('age',22)
+        mymap.set(40,"Number value")
+        mymap.set("isworking",true)
+
+
+    document.getElementById("getname").innerHTML="Name is:"+mymap.get("name")
+    document.getElementById("getage").innerHTML="Age is:"+mymap.get('age')
+    document.getElementById("getnumber").innerHTML="Number is:"+mymap.get(40)
+    
+    document.getElementById("haskey").innerHTML="Has a key:"+mymap.has(40)
+    mymap.delete("age")
+    document.getElementById("afterdlt").innerHTML="After deleted the age:" +mymap.has("age")
+    document.getElementById("beforeclear").innerHTML="Before Clear:"+mymap.size
+    mymap.clear()
+    document.getElementById("afterclear").innerHTML="After clear :"+mymap.size   
+    }
+    </script>
+    <h3>Console Map function</h3>
+    <button onclick="Show()">display</button>
+
+<script>
+    function Show() {
+        let mymap = new Map()
+
+        mymap.set("name", "Arya")
+        mymap.set("age", 22)
+        mymap.set(40, "Number value")
+        mymap.set("isworking", true)
+
+        console.log("Name is:", mymap.get("name"))
+        console.log("Age is:", mymap.get("age"))
+        console.log("Number is:", mymap.get(40))
+        console.log("Is working:", mymap.get("isworking"))
+
+        console.log("Has a key:", mymap.has(40))
+
+        mymap.delete("age")
+        console.log("After deleting age:", mymap.has("age"))
+
+        console.log("Before Clear:", mymap.size)
+
+        mymap.clear()
+        console.log("After Clear:", mymap.size)
+    }
+</script>
+</body>
+</html>

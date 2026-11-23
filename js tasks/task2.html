@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(181, 225, 210);
+    }
+    h1{
+        color: #6713e5;
+    }
+    input{
+        width: 200px;
+        height: 30px;
+        background-color: beige;
+        border: none;
+    }
+    button{
+        width: 150px;
+        height: 30px;
+        background-color: rgb(108, 209, 108);
+
+    }
+    p{
+        font-size: large;
+    }
+</style>
+<body>
+<h1>Employee Registration</h1>
+<div class="input">
+    <p>Enter Employee Name:</p>
+<input type="text" id="name">
+<p>Enter Employee Salary:</p>
+<input type="number"  id="salary">
+<br><br>
+<button onclick="details()">Add Employee</button>
+<p id="result"></p>
+</div>
+<script>
+    let map = new Map()
+    function details() {
+        let Name = document.getElementById("name").value
+        let salary = Number(document.getElementById("salary").value)
+        let employee = {
+            name: Name,
+            salary: salary
+        }
+        map.set(Name, employee)
+        document.getElementById("result").innerHTML += "Employee Name: "+map.get(Name).name + "|" +"Salary:"+ map.get(Name).salary + "<br>"
+        
+    }
+</script>
+</body>
+</html>
