@@ -29,7 +29,7 @@ JavaScript/
 |__Day 4/
 |__Day 5/
 |__Day 6
-|__Section
+|__section
 |
 └── README.md
 ```
